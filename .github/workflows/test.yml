@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-lastet
 
     steps:
-    - users: actions/checkout@v2
+    - uses: actions/checkout@v2
 
     - name: Set up Python 3.8
     - uses: actions/setup-python@v2
