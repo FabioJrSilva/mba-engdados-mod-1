@@ -30,8 +30,7 @@ jobs:
 
     - name: IaC Apply
       env:
-        COMMAND_IAC: terraform
-      
+        COMMAND_IAC: terraform      
       run:
         cd iac
         $COMMAND_IAC init
