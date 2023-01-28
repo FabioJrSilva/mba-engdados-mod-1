@@ -17,7 +17,6 @@ jobs:
       with:
         python-version: 3.8
 
-
     - name: HashiCorp - Setup Terraform
       uses: hashicorp/setup-terraform@v1.3.7
 
@@ -30,10 +29,10 @@ jobs:
 
     - name: IaC Apply
       env:
-        COMMAND_IAC: terraform      
+        COMMAND_IAC: terraform
       run:
         cd iac
         $COMMAND_IAC init
-        $COMMAND_IAC validate        
+        $COMMAND_IAC validate 
         $COMMAND_IAC plan
       

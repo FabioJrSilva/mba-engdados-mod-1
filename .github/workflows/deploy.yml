@@ -17,7 +17,6 @@ jobs:
       with:
         python-version: 3.8
 
-
     - name: HashiCorp - Setup Terraform
       uses: hashicorp/setup-terraform@v1.3.7
 
@@ -37,5 +36,4 @@ jobs:
         $COMMAND_IAC validate
         $COMMAND_IAC plan
         $COMMAND_IAC apply -auto-approve
-
       
